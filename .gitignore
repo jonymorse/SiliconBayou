@@ -1,0 +1,19 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Lens Studio temp/caches
+Cache/
+Workspaces/
+PluginsUserPreferences/
+Support/
+*.log
+*.tmp
+*.bak
+
+# Node / Python (if you add tooling)
+node_modules/
+.venv/
+venv/

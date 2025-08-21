@@ -1,0 +1,55 @@
+- !<AssetImportMetadata/aa01f846-05ca-41fc-a9de-1d18c1a5be47>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 3acea4b4-8080-4179-9f62-8066f24db8d2
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 3acea4b4-8080-4179-9f62-8066f24db8d2
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 9491ba85-df6b-4195-ace9-472553332e75
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/9491ba85-df6b-4195-ace9-472553332e75>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 82f6cc7d-e9e2-410e-8eec-3303aa491e7d
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    deviceTracking: false
+    enableLogging: false
+    gator: false
+    lockY: false
+    lookAhead: false
+    moveSpeed: false
+    turnMax: false
+    turnMin: false
+    turnTime: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - gator: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      deviceTracking: !<reference.DeviceTracking> 00000000-0000-0000-0000-000000000000
+      moveSpeed: 0.050000
+      lookAhead: 0.600000
+      turnMin: !<float> 60.000000
+      turnMax: !<float> 120.000000
+      turnTime: 0.250000
+      lockY: true
+      enableLogging: false
+  ScriptTypes:
+    -
+      {}

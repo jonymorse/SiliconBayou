@@ -1,0 +1,117 @@
+- !<AssetImportMetadata/7c782c17-ba0b-4a6e-86e7-25d3861d3565>
+  ImportedAssetIds:
+    .hidden/Material.001: !<reference> cbd4e140-cd28-425b-b206-c49a0c9e8a7c
+    .hidden/white: !<reference> 414afca1-d21a-4f7d-8354-1168b7efd9c0
+    34bdc6b9055eebed: !<reference> f4445d3b-ef67-4b81-866d-9fdb2295e5f8
+    7a0dd5cd69df73fa: !<reference> 91c3284f-55f3-4788-9437-5c7d42a94a1e
+    Materials/Material.001: !<reference> 50f25e7f-62d4-4f52-b219-61ceb979015e
+    Materials/Material.001|Material.001|GraphPassInfo: !<reference> 1a43fe03-216a-4642-90ed-00cdb20d42fe
+    Meshes/Mesh1.0: !<reference> 5fe4970c-d687-4329-b5a1-dbe85f60fc7a
+    Scene: !<reference> a822dcc9-0fd2-4a40-a304-134851442b00
+    Textures/texture_0: !<reference> 34925b1c-875f-458b-835b-98546fbc9c04
+    f67b8335867a4b89: !<reference> 8864f5cf-a6ac-4250-a5c6-3bd9ae70456e
+  ImporterName: FbxImporter
+  PrimaryAsset: !<reference> a822dcc9-0fd2-4a40-a304-134851442b00
+  PackageType: LegacyPackage
+  PackagePolicy: CanBeUnpackedTransparent
+  ExtraData:
+    {}
+  AssetDataMap:
+    Scene: !<own> 3e3cb8b7-a4b5-4994-914d-1a6f2123e0bd
+  DependentFiles:
+    []
+  ImporterSettings: !<FbxImporterSettings>
+    UseLegacyImporter: false
+    WithMaterials: true
+    NamingConvention: ByCategorySanitizeV2
+    PersistentIdGenerationAlgorithm: DescriptorBased
+    AnimationCurveOptimization: true
+    CustomAnimationSamplingRate: 30.000000
+    ImportVertexColor: true
+    ImportTangentsAndBinormals: true
+    RegenerateTangentsAndBinormals: false
+    RegenerateNormalsForSkinnedMeshes: true
+    ImportBlendShapeAnimation: true
+    ImportVertexAnimation: true
+    GeneratePivots: true
+    TriangulateNURBS: true
+    UseLegacyFbxLoader: false
+  CompressionSettings: !<ComplexCompressionSettings>
+    Presets:
+      None Compression: !<SingleCompressionSettings>
+        CompressorName: None
+        CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+      Performance Compression: !<SingleCompressionSettings>
+        CompressorName: Performance
+        CompressionSettings: !<TextureCompressionMipmapSettings>
+          Level: Medium
+          Mipmap: false
+    ExtensionMappings:
+      mesh: None Compression
+      png: Performance Compression
+      jpg: Performance Compression
+    Overrides:
+      {}
+- !<ObjectPrefab/2069b0f7-f2ba-48a1-9f63-873ac3c1250d>
+  PackagePath: ""
+  objects:
+    - !<own> 85f66e9f-99ce-4b32-be46-6e4b5f7dfc71
+  LazyLoading: false
+  RetainAssets: true
+- !<ObjectPrefabAssetData/3e3cb8b7-a4b5-4994-914d-1a6f2123e0bd>
+  SourceRemaps:
+    - 8864f5cf-a6ac-4250-a5c6-3bd9ae70456e: c9e0d06a-33e7-405c-addf-4a2da96d6359
+    - 91c3284f-55f3-4788-9437-5c7d42a94a1e: 85f66e9f-99ce-4b32-be46-6e4b5f7dfc71
+    - a822dcc9-0fd2-4a40-a304-134851442b00: 2069b0f7-f2ba-48a1-9f63-873ac3c1250d
+    - f4445d3b-ef67-4b81-866d-9fdb2295e5f8: d08755e8-8882-4c02-a0f4-a8cbd4529f3b
+  SourceState: !<own> 2069b0f7-f2ba-48a1-9f63-873ac3c1250d
+- !<SceneObject/85f66e9f-99ce-4b32-be46-6e4b5f7dfc71>
+  PrefabRemaps:
+    []
+  Name: Cyprus_Tree__0820191129_texture
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> d08755e8-8882-4c02-a0f4-a8cbd4529f3b
+  Components:
+    []
+- !<RenderMeshVisual/c9e0d06a-33e7-405c-addf-4a2da96d6359>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 50f25e7f-62d4-4f52-b219-61ceb979015e
+  Mesh: !<reference> 5fe4970c-d687-4329-b5a1-dbe85f60fc7a
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/d08755e8-8882-4c02-a0f4-a8cbd4529f3b>
+  PrefabRemaps:
+    []
+  Name: Mesh1.0
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c9e0d06a-33e7-405c-addf-4a2da96d6359

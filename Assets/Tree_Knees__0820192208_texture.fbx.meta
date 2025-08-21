@@ -1,0 +1,117 @@
+- !<AssetImportMetadata/83b61172-0c61-436c-9da6-f394dc60a99f>
+  ImportedAssetIds:
+    .hidden/Material.001: !<reference> 7459f617-0a0f-4d82-9e6c-24d4c3bb39f2
+    .hidden/white: !<reference> 853ad576-5f63-48d4-939e-3010c699b514
+    25d5ab76609209e8: !<reference> f7642af3-b9fe-4c99-b4ff-32a953c297d6
+    7a0dd5cd69df73fa: !<reference> 22f7101e-9e04-47a1-b1b5-30976395cd68
+    Materials/Material.001: !<reference> fc93153f-2331-4bc7-a997-c0d035e90620
+    Materials/Material.001|Material.001|GraphPassInfo: !<reference> 63d29c45-df74-4cf6-8168-d3f433db4d82
+    Meshes/input: !<reference> 1bcded65-ddcd-425d-8591-7226e8aab51e
+    Scene: !<reference> b9c5ff39-5932-40d4-8f74-361127dc0ad4
+    Textures/texture_0: !<reference> acfeaab1-c662-4367-8781-f242885c678b
+    e08af43e07410c35: !<reference> 58a2e9d4-cebb-48ea-bb19-536fa00330e7
+  ImporterName: FbxImporter
+  PrimaryAsset: !<reference> b9c5ff39-5932-40d4-8f74-361127dc0ad4
+  PackageType: LegacyPackage
+  PackagePolicy: CanBeUnpackedTransparent
+  ExtraData:
+    {}
+  AssetDataMap:
+    Scene: !<own> 8b496b48-ae39-4153-98d9-47318147e641
+  DependentFiles:
+    []
+  ImporterSettings: !<FbxImporterSettings>
+    UseLegacyImporter: false
+    WithMaterials: true
+    NamingConvention: ByCategorySanitizeV2
+    PersistentIdGenerationAlgorithm: DescriptorBased
+    AnimationCurveOptimization: true
+    CustomAnimationSamplingRate: 30.000000
+    ImportVertexColor: true
+    ImportTangentsAndBinormals: true
+    RegenerateTangentsAndBinormals: false
+    RegenerateNormalsForSkinnedMeshes: true
+    ImportBlendShapeAnimation: true
+    ImportVertexAnimation: true
+    GeneratePivots: true
+    TriangulateNURBS: true
+    UseLegacyFbxLoader: false
+  CompressionSettings: !<ComplexCompressionSettings>
+    Presets:
+      None Compression: !<SingleCompressionSettings>
+        CompressorName: None
+        CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+      Performance Compression: !<SingleCompressionSettings>
+        CompressorName: Performance
+        CompressionSettings: !<TextureCompressionMipmapSettings>
+          Level: Medium
+          Mipmap: false
+    ExtensionMappings:
+      mesh: None Compression
+      png: Performance Compression
+      jpg: Performance Compression
+    Overrides:
+      {}
+- !<SceneObject/5220910f-f6a8-4026-aa86-05b6f7d2fdf4>
+  PrefabRemaps:
+    []
+  Name: Tree_Knees__0820192208_texture
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 7b5f5c7a-69b9-4da0-b062-88d41fa03534
+  Components:
+    []
+- !<RenderMeshVisual/558fcb7f-e72e-4df5-9e8e-186600a97948>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> fc93153f-2331-4bc7-a997-c0d035e90620
+  Mesh: !<reference> 1bcded65-ddcd-425d-8591-7226e8aab51e
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/7b5f5c7a-69b9-4da0-b062-88d41fa03534>
+  PrefabRemaps:
+    []
+  Name: input
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 558fcb7f-e72e-4df5-9e8e-186600a97948
+- !<ObjectPrefabAssetData/8b496b48-ae39-4153-98d9-47318147e641>
+  SourceRemaps:
+    - 22f7101e-9e04-47a1-b1b5-30976395cd68: 5220910f-f6a8-4026-aa86-05b6f7d2fdf4
+    - 58a2e9d4-cebb-48ea-bb19-536fa00330e7: 558fcb7f-e72e-4df5-9e8e-186600a97948
+    - b9c5ff39-5932-40d4-8f74-361127dc0ad4: ae067c41-81fb-489b-9675-12e1d894e5ab
+    - f7642af3-b9fe-4c99-b4ff-32a953c297d6: 7b5f5c7a-69b9-4da0-b062-88d41fa03534
+  SourceState: !<own> ae067c41-81fb-489b-9675-12e1d894e5ab
+- !<ObjectPrefab/ae067c41-81fb-489b-9675-12e1d894e5ab>
+  PackagePath: ""
+  objects:
+    - !<own> 5220910f-f6a8-4026-aa86-05b6f7d2fdf4
+  LazyLoading: false
+  RetainAssets: true

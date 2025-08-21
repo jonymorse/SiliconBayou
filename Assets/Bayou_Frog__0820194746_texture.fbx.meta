@@ -1,0 +1,117 @@
+- !<AssetImportMetadata/44dcfb1d-d5dc-4ae6-bb78-cff722099563>
+  ImportedAssetIds:
+    .hidden/Material.001: !<reference> d865b38f-921d-4d53-a7fd-1d8b483572a8
+    .hidden/white: !<reference> e6fe3b76-1bfd-4e5a-8566-f665b7b96542
+    25d5ab76609209e8: !<reference> 0a65f175-cc4c-4758-9394-ec966377bed5
+    7a0dd5cd69df73fa: !<reference> 06da9924-4ca0-4895-a0fe-9e6d81c40982
+    Materials/Material.001: !<reference> e70e090c-bf86-4481-a5e3-13cb1184815f
+    Materials/Material.001|Material.001|GraphPassInfo: !<reference> 79da0338-3fc9-4356-ace2-931967edf7e1
+    Meshes/input: !<reference> 8b1478b6-0696-4667-b383-550e1bc19886
+    Scene: !<reference> de04f386-7cad-4454-ab53-193f5404a2b6
+    Textures/texture_0: !<reference> a6f6e0e7-e80e-4123-a028-ce134f72d68b
+    e08af43e07410c35: !<reference> 200c9ae9-f1d3-445e-9eb2-cd4e90b4f40e
+  ImporterName: FbxImporter
+  PrimaryAsset: !<reference> de04f386-7cad-4454-ab53-193f5404a2b6
+  PackageType: LegacyPackage
+  PackagePolicy: CanBeUnpackedTransparent
+  ExtraData:
+    {}
+  AssetDataMap:
+    Scene: !<own> 88eb20ec-70c4-4fa1-9650-a63c5cdc2c62
+  DependentFiles:
+    []
+  ImporterSettings: !<FbxImporterSettings>
+    UseLegacyImporter: false
+    WithMaterials: true
+    NamingConvention: ByCategorySanitizeV2
+    PersistentIdGenerationAlgorithm: DescriptorBased
+    AnimationCurveOptimization: true
+    CustomAnimationSamplingRate: 30.000000
+    ImportVertexColor: true
+    ImportTangentsAndBinormals: true
+    RegenerateTangentsAndBinormals: false
+    RegenerateNormalsForSkinnedMeshes: true
+    ImportBlendShapeAnimation: true
+    ImportVertexAnimation: true
+    GeneratePivots: true
+    TriangulateNURBS: true
+    UseLegacyFbxLoader: false
+  CompressionSettings: !<ComplexCompressionSettings>
+    Presets:
+      None Compression: !<SingleCompressionSettings>
+        CompressorName: None
+        CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+      Performance Compression: !<SingleCompressionSettings>
+        CompressorName: Performance
+        CompressionSettings: !<TextureCompressionMipmapSettings>
+          Level: Medium
+          Mipmap: false
+    ExtensionMappings:
+      mesh: None Compression
+      png: Performance Compression
+      jpg: Performance Compression
+    Overrides:
+      {}
+- !<ObjectPrefab/1313ca33-a03c-4f52-8b96-3613765fd581>
+  PackagePath: ""
+  objects:
+    - !<own> caf4d20c-3aba-4de0-9336-3d1935346d24
+  LazyLoading: false
+  RetainAssets: true
+- !<ObjectPrefabAssetData/88eb20ec-70c4-4fa1-9650-a63c5cdc2c62>
+  SourceRemaps:
+    - 06da9924-4ca0-4895-a0fe-9e6d81c40982: caf4d20c-3aba-4de0-9336-3d1935346d24
+    - 0a65f175-cc4c-4758-9394-ec966377bed5: b83944ad-b73d-45ec-b650-4106e4dcea5c
+    - 200c9ae9-f1d3-445e-9eb2-cd4e90b4f40e: fffc9f24-bc2e-4757-8815-997d0ae109b6
+    - de04f386-7cad-4454-ab53-193f5404a2b6: 1313ca33-a03c-4f52-8b96-3613765fd581
+  SourceState: !<own> 1313ca33-a03c-4f52-8b96-3613765fd581
+- !<SceneObject/b83944ad-b73d-45ec-b650-4106e4dcea5c>
+  PrefabRemaps:
+    []
+  Name: input
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> fffc9f24-bc2e-4757-8815-997d0ae109b6
+- !<SceneObject/caf4d20c-3aba-4de0-9336-3d1935346d24>
+  PrefabRemaps:
+    []
+  Name: Bayou_Frog__0820194746_texture
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> b83944ad-b73d-45ec-b650-4106e4dcea5c
+  Components:
+    []
+- !<RenderMeshVisual/fffc9f24-bc2e-4757-8815-997d0ae109b6>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> e70e090c-bf86-4481-a5e3-13cb1184815f
+  Mesh: !<reference> 8b1478b6-0696-4667-b383-550e1bc19886
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
