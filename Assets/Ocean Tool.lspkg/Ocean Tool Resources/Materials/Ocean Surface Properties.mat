@@ -1,0 +1,222 @@
+- !<Material/d0b61e4e-5a50-44cc-a06c-ca2b7f7bb01d>
+  PackagePath: ""
+  PassesInfo:
+    - !<own> 67c90b3f-70c6-4fff-aee8-7baa9b48fe48
+- !<PassInfo/67c90b3f-70c6-4fff-aee8-7baa9b48fe48>
+  CachedProperties:
+    - Port_Amplitude_N000:
+        typeIdx: 1
+        value: 1.000000
+    - Port_Choppiness_N000:
+        typeIdx: 1
+        value: 0.000000
+    - Port_Depth_N004:
+        typeIdx: 1
+        value: 1.000000
+    - Port_FinalColor2_N004:
+        typeIdx: 5
+        value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+    - Port_FinalColor3_N004:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - Port_GSplatPointSize_N004:
+        typeIdx: 1
+        value: 0.000000
+    - Port_Import_N091:
+        typeIdx: 5
+        value: {x: 1.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+    - Port_Input0_N008:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - Port_Input0_N012:
+        typeIdx: 5
+        value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+    - Port_Input1_N008:
+        typeIdx: 1
+        value: 0.300000
+    - Port_Input1_N012:
+        typeIdx: 1
+        value: 0.000000
+    - Port_Input2_N012:
+        typeIdx: 1
+        value: 1.000000
+    - Port_Input_N008:
+        typeIdx: 5
+        value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+    - Port_LODValue_N002:
+        typeIdx: 1
+        value: 0.000000
+    - Port_Offset_N000:
+        typeIdx: 1
+        value: 0.000000
+    - Port_RangeMaxA_N008:
+        typeIdx: 1
+        value: 1.000000
+    - Port_RangeMaxB_N008:
+        typeIdx: 1
+        value: 1.000000
+    - Port_RangeMinA_N008:
+        typeIdx: 1
+        value: 0.000000
+    - Port_RangeMinB_N008:
+        typeIdx: 1
+        value: 0.000000
+    - Port_RayDirection_N004:
+        typeIdx: 4
+        value: {x: 0.000000, y: 1.000000, z: 0.000000}
+    - Port_RayOrigin_N004:
+        typeIdx: 4
+        value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    - Port_UVCoord_N002:
+        typeIdx: 3
+        value: {x: 0.000000, y: 0.000000}
+    - Port_Value1_N010:
+        typeIdx: 1
+        value: 0.000000
+    - Port_Value2_N010:
+        typeIdx: 1
+        value: 0.000000
+    - Port_Value3_N010:
+        typeIdx: 1
+        value: 0.000000
+    - Port_Value4_N010:
+        typeIdx: 1
+        value: 0.000000
+    - Port_ValueIn_N008:
+        typeIdx: 5
+        value: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+    - Port_Weight_N000:
+        typeIdx: 1
+        value: 0.000000
+    - Port_WorldNormal_N004:
+        typeIdx: 4
+        value: {x: 0.000000, y: 1.000000, z: 0.000000}
+    - Port_WorldPosition_N004:
+        typeIdx: 4
+        value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    - Port_WorldTangent_N004:
+        typeIdx: 4
+        value: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - Port_inten_N000:
+        typeIdx: 1
+        value: 0.000000
+    - Port_power_N000:
+        typeIdx: 1
+        value: 0.000000
+    - Tweak_N10:
+        typeIdx: 1
+        value: 0.230000
+    - Tweak_N12:
+        typeIdx: 1
+        value: 0.370000
+    - choppyness:
+        typeIdx: 1
+        value: 10.000000
+    - fluidNormalBorderColor:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - fluidNormalDims:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - fluidNormalTransform:
+        typeIdx: 7
+        value:
+          0: {x: 1.000000, y: 0.000000, z: 0.000000}
+          1: {x: 0.000000, y: 1.000000, z: 0.000000}
+          2: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - fluidNormalUvMinMax:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - overrideTimeDelta:
+        typeIdx: 1
+        value: 0.000000
+    - overrideTimeElapsed:
+        typeIdx: 1
+        value: 0.000000
+    - overrideTimeEnabled:
+        typeIdx: 0
+        value: 0
+    - raymarchSteps:
+        typeIdx: 1
+        value: 10.000000
+    - waveMul:
+        typeIdx: 1
+        value: 5.600000
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0.000000, y: 0.000000}
+  FrustumCulling: Auto
+  FrustumCullPad: 0.000000
+  InstanceCount: 1
+  Defines:
+    []
+  BlendMode: Disabled
+  Properties:
+    Port_Frequency_N000:
+      typeIdx: 1
+      value: 0.200000
+    Port_Import_N092:
+      typeIdx: 1
+      value: 1.180000
+    Port_Import_N095:
+      typeIdx: 1
+      value: 1.060000
+    Port_Import_N100:
+      typeIdx: 1
+      value: 2.000000
+    Port_Input0_N102:
+      typeIdx: 5
+      value: {x: 0.500000, y: 0.500000, z: 0.500000, w: 0.000000}
+    Port_Input1_N094:
+      typeIdx: 5
+      value: {x: 0.212500, y: 0.715400, z: 0.072100, w: 0.000000}
+    Port_MarchSteps_N000:
+      typeIdx: 1
+      value: 3.000000
+    Port_Strength1_N003:
+      typeIdx: 1
+      value: 0.500000
+    Port_Strength2_N003:
+      typeIdx: 1
+      value: 0.500000
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    amplitude:
+      typeIdx: 1
+      value: 1.000000
+    choppiness:
+      typeIdx: 1
+      value: 1.000000
+    enableFluid:
+      typeIdx: 1
+      value: 1.000000
+    fluidNormal:
+      typeIdx: 9
+      value:
+        id: 00000000-0000-0000-0000-000000000000
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: Repeat
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    noiseSteps:
+      typeIdx: 1
+      value: 5.000000
+    norSteps:
+      typeIdx: 1
+      value: 1.000000
+    offset:
+      typeIdx: 1
+      value: 1.000000
+    speed:
+      typeIdx: 1
+      value: 10.000000
+  Pass: !<reference> f9c47be7-7bb7-46e2-8c24-80f234ebb085

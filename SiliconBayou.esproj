@@ -10,9 +10,9 @@ updateCheckpoint: 68
 sceneId: 0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99
 viewConfig:
   simulation:
-    device: iPhone 14 Pro
-    cameraFov: 23.830000
-    fullFrameAspect: 0.562500
+    device: No Simulation
+    cameraFov: 66.519997
+    fullFrameAspect: nan
     resolutionScale: 1.000000
     viewport: Maximized
     output: Live
@@ -21,7 +21,7 @@ viewConfig:
     tint: true
     screenshot: false
     videoScreenRecord: false
-  cameraType: Back
+  cameraType: Front
 metaInfo:
   hints:
     []

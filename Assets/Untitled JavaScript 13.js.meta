@@ -1,0 +1,49 @@
+- !<AssetImportMetadata/2e6939f4-d19d-4ded-8d57-63420c8e4bc0>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> d86ba25a-0223-4d97-b1f3-bfccb6bd77f7
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> d86ba25a-0223-4d97-b1f3-bfccb6bd77f7
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> d8336971-a803-43de-8012-2819cee45634
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/d8336971-a803-43de-8012-2819cee45634>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 6aa1a701-ebc5-4638-befa-ce402a24d11b
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    headMorphScript: false
+    keepPlaceholderOnFail: false
+    modelFieldName: false
+    placeholderPrefab: false
+    remoteRef: false
+    swapBackOnDisable: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - headMorphScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      modelFieldName: model
+      placeholderPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      remoteRef: !<reference.RemoteReferenceAsset> 00000000-0000-0000-0000-000000000000
+      keepPlaceholderOnFail: true
+      swapBackOnDisable: false
+  ScriptTypes:
+    -
+      {}

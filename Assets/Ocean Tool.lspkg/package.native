@@ -1,0 +1,43 @@
+- !<NativePackageDescriptor/f2eaa0a1-8bc3-4e4c-89b1-27057d1628f6>
+  PackagePath: ""
+  StudioVersion:
+    major: 5
+    minor: 12
+    patch: 1
+    build: 25080420
+    type: Unset
+    buildFlavor: ""
+    timestamp: 0
+    commit: ""
+  Description: |
+    // VERSION NOTES:
+    // 1.2.1:   - Fixed floating object interaction with touch input.
+    // 1.1.1:    - Only enabled boday intersection when it's detected, added auto camera assignment.
+    // 1.0.1:   - Added body depth occlusion.
+    
+    This tool creates an ocean surface along with waterline split views. It comes with options like adding touch interaction to generate wave on the water surface, or make any 3D object float as well as having body intersection.
+    
+    You can start from the Ocean Tool script to try out all the controls, also click and drag around in this preview window to see the fluid interaction. Experiment with different envmap light textures to achieve the desired result for your project. Don't forget to try adding world device tracking to the main camera, and play around using the Interactive Preview!
+
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  VersionMajor: 1
+  VersionMinor: 2
+  VersionPatch: 1
+  UpdateCheckpoint: 68
+  ExportUid: 79574fd2-39a5-4c2a-b8e9-8f8a84dc421b
+  ComponentUid: cf8fc38b-6313-450e-b6f8-8c1e2b8ad28c
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  Instantiable: !<reference> 00000000-0000-0000-0000-000000000000
+  AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
+    Name: ""
+    AssetId: ""
+    Hash: ""
+    Version:
+      major: 0
+      minor: 0
+      patch: 0
+      build: 0

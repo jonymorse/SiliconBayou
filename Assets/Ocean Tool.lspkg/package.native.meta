@@ -1,10 +1,10 @@
-- !<AssetImportMetadata/27293d30-ce45-47db-a6f7-7638e1a527bb>
+- !<AssetImportMetadata/c86564de-2385-ef87-0447-b9fe6c8e4c98>
   ImportedAssetIds:
-    {}
-  ImporterName: NativePackageImporter
+    NativePackageDescriptor: !<reference> f2eaa0a1-8bc3-4e4c-89b1-27057d1628f6
+  ImporterName: NativePackageDescriptorImporter
   PrimaryAsset: !<reference> f2eaa0a1-8bc3-4e4c-89b1-27057d1628f6
-  PackageType: PackedNativePackageRoot
-  PackagePolicy: CanBeUnpackedTransparent
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
   ExtraData:
     AssetLibraryId: 31eWFrGqTUFk2U2VkGB1LB
   AssetDataMap:
