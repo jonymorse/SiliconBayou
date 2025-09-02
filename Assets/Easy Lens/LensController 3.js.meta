@@ -1,0 +1,39 @@
+- !<AssetImportMetadata/107acb9b-0cc5-432e-9374-6798828497b7>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> a825f1dc-ec33-475c-aaf2-24ee13459c36
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> a825f1dc-ec33-475c-aaf2-24ee13459c36
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    USE_EASY_LENS: ""
+  AssetDataMap:
+    JavaScriptAsset: !<own> 4c7004c0-9038-4d56-b32e-2b5795778e9f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/4c7004c0-9038-4d56-b32e-2b5795778e9f>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 49d6830b-633d-4827-98ce-7bf649cf1e47
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    pelicanHeadmorph: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - pelicanHeadmorph: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

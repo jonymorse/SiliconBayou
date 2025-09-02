@@ -10,9 +10,9 @@ updateCheckpoint: 68
 sceneId: 0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99
 viewConfig:
   simulation:
-    device: No Simulation
-    cameraFov: 66.519997
-    fullFrameAspect: nan
+    device: iPhone 14 Pro
+    cameraFov: 23.830000
+    fullFrameAspect: 0.562500
     resolutionScale: 1.000000
     viewport: Maximized
     output: Live
@@ -21,15 +21,15 @@ viewConfig:
     tint: true
     screenshot: false
     videoScreenRecord: false
-  cameraType: Front
+  cameraType: Back
 metaInfo:
   hints:
     []
   tags:
     []
-  lensName: Bayou
+  lensName: Pelican Headmorph
   lensDescriptors:
-    - GEN_AI_ICON
+    []
   lensApplicability:
     - Front
     - Back
@@ -37,7 +37,7 @@ metaInfo:
     - Mobile
     - CameraKit
   platformBundlesEnabled: false
-  iconHash: 79ebde8f499111eff6130426a8a522d6
+  iconHash: 7b36ad01bb2f4e3f863cb4f4bb75b45d
   videoPreviewHash: ""
   fromTemplateName: Default
   fromTemplateUrl: Lens Studio 5.12.1.25080420

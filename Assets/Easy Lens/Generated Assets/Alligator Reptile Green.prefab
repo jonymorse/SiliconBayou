@@ -1,0 +1,41 @@
+- !<ObjectPrefab/d8629e76-6865-41c0-aad6-99fad539ce72>
+  PackagePath: ""
+  objects:
+    - !<own> 4e9dba9d-2007-4ac7-9486-b891b08e0ff9
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/4e9dba9d-2007-4ac7-9486-b891b08e0ff9>
+  PrefabRemaps:
+    []
+  Name: Alligator Reptile Green
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9d74f8de-1ea2-47a4-bdf5-341fa1a82287
+- !<RenderMeshVisual/9d74f8de-1ea2-47a4-bdf5-341fa1a82287>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 6aad39b2-9c70-4f0c-bd2e-f2e36225fa91
+  Mesh: !<reference> 7598a38a-9c37-4f83-b69e-c1c24e0571ca
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    ExternalFaceMesh: 1.000000

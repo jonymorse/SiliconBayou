@@ -2,14 +2,14 @@
   ImportedAssetIds:
     .hidden/Material.001: !<reference> 7459f617-0a0f-4d82-9e6c-24d4c3bb39f2
     .hidden/white: !<reference> 853ad576-5f63-48d4-939e-3010c699b514
-    25d5ab76609209e8: !<reference> f7642af3-b9fe-4c99-b4ff-32a953c297d6
-    7a0dd5cd69df73fa: !<reference> 22f7101e-9e04-47a1-b1b5-30976395cd68
+    66780cf3a4dcb2b8: !<reference> f61b6ccc-491f-4a43-8d89-d1f5abb3412a
     Materials/Material.001: !<reference> fc93153f-2331-4bc7-a997-c0d035e90620
     Materials/Material.001|Material.001|GraphPassInfo: !<reference> 63d29c45-df74-4cf6-8168-d3f433db4d82
     Meshes/input: !<reference> 1bcded65-ddcd-425d-8591-7226e8aab51e
     Scene: !<reference> b9c5ff39-5932-40d4-8f74-361127dc0ad4
     Textures/texture_0: !<reference> acfeaab1-c662-4367-8781-f242885c678b
-    e08af43e07410c35: !<reference> 58a2e9d4-cebb-48ea-bb19-536fa00330e7
+    a3759c4d64fd0042: !<reference> 647b8f23-ecec-4520-a07d-c75e00ed5444
+    d841e78149e04e40: !<reference> 0a4a4080-2696-497d-91aa-2d3a17566d9b
   ImporterName: FbxImporter
   PrimaryAsset: !<reference> b9c5ff39-5932-40d4-8f74-361127dc0ad4
   PackageType: LegacyPackage

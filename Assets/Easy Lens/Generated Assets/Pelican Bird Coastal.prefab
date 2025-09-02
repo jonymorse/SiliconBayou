@@ -1,0 +1,41 @@
+- !<ObjectPrefab/41429f8a-ef01-43ee-a1ac-53b04ba614fd>
+  PackagePath: ""
+  objects:
+    - !<own> 5b268947-e4f0-4fb2-a566-bb527dac87e7
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/5b268947-e4f0-4fb2-a566-bb527dac87e7>
+  PrefabRemaps:
+    []
+  Name: Pelican Bird Coastal
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> aa119dbd-fb62-4964-96ad-0fcd5761a7c1
+- !<RenderMeshVisual/aa119dbd-fb62-4964-96ad-0fcd5761a7c1>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 7d527497-b7df-40ae-a5a6-04d90c16aa53
+  Mesh: !<reference> 38f85e5b-ae12-43bb-9a7d-c3ca42700b7c
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    ExternalFaceMesh: 1.000000

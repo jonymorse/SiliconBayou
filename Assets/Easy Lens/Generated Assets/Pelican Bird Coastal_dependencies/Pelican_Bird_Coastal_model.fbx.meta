@@ -1,23 +1,23 @@
-- !<AssetImportMetadata/44dcfb1d-d5dc-4ae6-bb78-cff722099563>
+- !<AssetImportMetadata/7d79f8e3-2055-4285-86b2-260fd2e3ce12>
   ImportedAssetIds:
-    .hidden/Material.001: !<reference> d865b38f-921d-4d53-a7fd-1d8b483572a8
-    .hidden/white: !<reference> e6fe3b76-1bfd-4e5a-8566-f665b7b96542
-    66780cf3a4dcb2b8: !<reference> e1a3d5ce-f23c-48bc-b9a1-9dc898b78973
-    Materials/Material.001: !<reference> e70e090c-bf86-4481-a5e3-13cb1184815f
-    Materials/Material.001|Material.001|GraphPassInfo: !<reference> 79da0338-3fc9-4356-ace2-931967edf7e1
-    Meshes/input: !<reference> 8b1478b6-0696-4667-b383-550e1bc19886
-    Scene: !<reference> de04f386-7cad-4454-ab53-193f5404a2b6
-    Textures/texture_0: !<reference> a6f6e0e7-e80e-4123-a028-ce134f72d68b
-    a3759c4d64fd0042: !<reference> f3734ec9-f7b5-4a0e-8005-b2210a57ff10
-    d841e78149e04e40: !<reference> e061ca41-853d-409e-a92d-188c6c7ae3ae
+    .hidden/default: !<reference> 1dba2c34-87c9-4769-a4a3-4543b596766e
+    .hidden/white: !<reference> 0f08771c-c93a-47f3-b873-b27e4b8cd77f
+    66780cf3a4dcb2b8: !<reference> 2ac68520-d55a-49b6-801e-77f4c30dbeed
+    Materials/default: !<reference> 7d527497-b7df-40ae-a5a6-04d90c16aa53
+    Materials/default|default|GraphPassInfo: !<reference> 5b5d9bb9-9af8-4d85-89ea-dcf47084f24d
+    Meshes/model: !<reference> 3268ee3b-0603-47ca-9f28-05606e928f9f
+    Scene: !<reference> 076141c6-7938-4110-9e43-cf4041cd391e
+    Textures/texture_kd: !<reference> a1317c7f-b2d2-48c6-b3bc-0dfce310bcc5
+    c7e5b47c6db85bab: !<reference> ad071d01-6362-498b-8eb2-74456ac02814
+    d4e122d2bbc69d36: !<reference> af27673a-697a-49cb-b9b0-9c9c488a4f77
   ImporterName: FbxImporter
-  PrimaryAsset: !<reference> de04f386-7cad-4454-ab53-193f5404a2b6
+  PrimaryAsset: !<reference> 076141c6-7938-4110-9e43-cf4041cd391e
   PackageType: LegacyPackage
   PackagePolicy: CanBeUnpackedTransparent
   ExtraData:
-    {}
+    USE_EASY_LENS: ""
   AssetDataMap:
-    Scene: !<own> 88eb20ec-70c4-4fa1-9650-a63c5cdc2c62
+    Scene: !<own> 2937c1ab-c450-4e9a-9dcd-935af670e096
   DependentFiles:
     []
   ImporterSettings: !<FbxImporterSettings>
@@ -48,27 +48,35 @@
           Mipmap: false
     ExtensionMappings:
       mesh: None Compression
-      png: Performance Compression
       jpg: Performance Compression
     Overrides:
       {}
-- !<ObjectPrefab/1313ca33-a03c-4f52-8b96-3613765fd581>
-  PackagePath: ""
-  objects:
-    - !<own> caf4d20c-3aba-4de0-9336-3d1935346d24
-  LazyLoading: false
-  RetainAssets: true
-- !<ObjectPrefabAssetData/88eb20ec-70c4-4fa1-9650-a63c5cdc2c62>
+- !<ObjectPrefabAssetData/2937c1ab-c450-4e9a-9dcd-935af670e096>
   SourceRemaps:
-    - 06da9924-4ca0-4895-a0fe-9e6d81c40982: caf4d20c-3aba-4de0-9336-3d1935346d24
-    - 0a65f175-cc4c-4758-9394-ec966377bed5: b83944ad-b73d-45ec-b650-4106e4dcea5c
-    - 200c9ae9-f1d3-445e-9eb2-cd4e90b4f40e: fffc9f24-bc2e-4757-8815-997d0ae109b6
-    - de04f386-7cad-4454-ab53-193f5404a2b6: 1313ca33-a03c-4f52-8b96-3613765fd581
-  SourceState: !<own> 1313ca33-a03c-4f52-8b96-3613765fd581
-- !<SceneObject/b83944ad-b73d-45ec-b650-4106e4dcea5c>
+    - 076141c6-7938-4110-9e43-cf4041cd391e: ddb113e3-09d3-4a7f-a3c3-ffe77b1eb3d2
+    - 2ac68520-d55a-49b6-801e-77f4c30dbeed: ac55f069-db48-433a-8ddc-33da3167b342
+    - ad071d01-6362-498b-8eb2-74456ac02814: dd168ef9-4832-4b3c-9ca2-52df12377a54
+    - af27673a-697a-49cb-b9b0-9c9c488a4f77: f9a71600-e93f-423e-91d8-8c93497fb57f
+  SourceState: !<own> ddb113e3-09d3-4a7f-a3c3-ffe77b1eb3d2
+- !<SceneObject/ac55f069-db48-433a-8ddc-33da3167b342>
   PrefabRemaps:
     []
-  Name: input
+  Name: Pelican_Bird_Coastal_model
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> dd168ef9-4832-4b3c-9ca2-52df12377a54
+  Components:
+    []
+- !<SceneObject/dd168ef9-4832-4b3c-9ca2-52df12377a54>
+  PrefabRemaps:
+    []
+  Name: model
   Enabled: true
   Layers: 1
   LocalTransform: !<TransformEntity>
@@ -79,23 +87,14 @@
   Children:
     []
   Components:
-    - !<own> fffc9f24-bc2e-4757-8815-997d0ae109b6
-- !<SceneObject/caf4d20c-3aba-4de0-9336-3d1935346d24>
-  PrefabRemaps:
-    []
-  Name: Bayou_Frog__0820194746_texture
-  Enabled: true
-  Layers: 1
-  LocalTransform: !<TransformEntity>
-    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    HasSegmentScaleCompensation: false
-  Children:
-    - !<own> b83944ad-b73d-45ec-b650-4106e4dcea5c
-  Components:
-    []
-- !<RenderMeshVisual/fffc9f24-bc2e-4757-8815-997d0ae109b6>
+    - !<own> f9a71600-e93f-423e-91d8-8c93497fb57f
+- !<ObjectPrefab/ddb113e3-09d3-4a7f-a3c3-ffe77b1eb3d2>
+  PackagePath: ""
+  objects:
+    - !<own> ac55f069-db48-433a-8ddc-33da3167b342
+  LazyLoading: false
+  RetainAssets: true
+- !<RenderMeshVisual/f9a71600-e93f-423e-91d8-8c93497fb57f>
   PrefabRemaps:
     []
   Name: component_0
@@ -108,8 +107,8 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Materials:
-    - !<reference> e70e090c-bf86-4481-a5e3-13cb1184815f
-  Mesh: !<reference> 8b1478b6-0696-4667-b383-550e1bc19886
+    - !<reference> 7d527497-b7df-40ae-a5a6-04d90c16aa53
+  Mesh: !<reference> 3268ee3b-0603-47ca-9f28-05606e928f9f
   Skin: !<reference> 00000000-0000-0000-0000-000000000000
   BlendShapesEnabled: true
   BlendNormals: false

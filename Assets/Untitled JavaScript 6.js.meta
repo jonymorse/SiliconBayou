@@ -1,0 +1,63 @@
+- !<AssetImportMetadata/96aaf6e0-cd6d-4c82-b51f-a974be7db14c>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 24906dd2-1be8-4ec1-9a7f-7e6290ddb8d9
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 24906dd2-1be8-4ec1-9a7f-7e6290ddb8d9
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> c57111db-74bb-42a3-ae32-9722e4865cc5
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/c57111db-74bb-42a3-ae32-9722e4865cc5>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 1899e304-ae3e-4905-958a-1d41d2388709
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    hideAfter: false
+    interaction: false
+    itemId: false
+    itemName: false
+    itemType: false
+    nameFrom: false
+    pulseDuration: false
+    pulseScale: false
+    rmv: false
+    shrinkDuration: false
+    tappedColor: false
+    value: false
+    wocScript: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - interaction: !<reference.InteractionComponent> 00000000-0000-0000-0000-000000000000
+      rmv: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+      tappedColor: !<Vec4> {x: 0.400000, y: 1.000000, z: 0.600000, w: 1.000000}
+      pulseScale: 1.180000
+      pulseDuration: 0.180000
+      hideAfter: true
+      shrinkDuration: 0.220000
+      value: 1
+      itemId: ""
+      itemName: ""
+      itemType: ""
+      nameFrom: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      wocScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

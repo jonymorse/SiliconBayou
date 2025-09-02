@@ -1,8 +1,8 @@
-- !<AssetImportMetadata/8709f36c-4d9f-4ad9-9dc5-6fbc6eadd000>
+- !<AssetImportMetadata/fe7d7d3d-eda0-4343-a953-5a28bfc15245>
   ImportedAssetIds:
-    RemoteReferenceAsset: !<reference> 8940b402-2a25-4ca9-b2ff-ecd694a7cf2c
-  ImporterName: RemoteReferenceAssetImporter
-  PrimaryAsset: !<reference> 8940b402-2a25-4ca9-b2ff-ecd694a7cf2c
+    FaceMesh: !<reference> 38f85e5b-ae12-43bb-9a7d-c3ca42700b7c
+  ImporterName: FaceMeshImporter
+  PrimaryAsset: !<reference> 38f85e5b-ae12-43bb-9a7d-c3ca42700b7c
   PackageType: NotAPackage
   PackagePolicy: CannotBeUnpacked
   ExtraData:

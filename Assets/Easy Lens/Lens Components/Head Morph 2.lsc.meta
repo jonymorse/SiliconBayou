@@ -1,0 +1,32 @@
+- !<AssetImportMetadata/792e64f7-fab1-43f4-848c-fb24c204daf5>
+  ImportedAssetIds:
+    b03b48d6-d04b-4dc4-810b-a9c36422fa9a: !<reference> 1fbaaed7-42df-4aea-8fd6-97f138f30887
+    a2a86216-e054-4ba1-99bc-46ed1277aa32: !<reference> 766e093f-85f9-4d2f-bed1-05d003a34657
+    c39cc07e-411c-4e70-a150-f08a3f80b4b2: !<reference> d465f866-be14-4020-8081-5b8e2d69201e
+    d67bcb08-15d5-42ae-94cb-c4265c05303e: !<reference> d3f99bef-1fa6-4080-8351-11b98f0ece5a
+    471a78fb-c5d1-4485-8968-4fee9277c000: !<reference> 95136cd8-234d-4802-a603-93f045179847
+    53c8e445-ccef-498a-942e-65382a094582: !<reference> 18f7c134-799b-4610-b4e4-e99d090808e9
+    c937c945-73d7-41ac-a41e-9b9181dc123b: !<reference> 8c756342-9174-4fd9-a175-6eb1f4c58966
+    79185306-1b32-4ca3-91c9-5e3108cb1dbc: !<reference> c0e84e4d-bf0e-490a-8f05-22bf1c993d2a
+    4090ab5f-1c02-4fa3-a590-ab4bd67e32f2: !<reference> 75183bf0-6446-43b0-8f51-efa56538a2af
+    c6e122fa-f438-417c-9d87-db9a11b219fa: !<reference> ec7be444-2283-44f8-978f-accd3fce9394
+    41068950-4070-416e-8df6-64e7828d5e03: !<reference> a992147b-513a-486a-8b2e-f9a07e500722
+    a0f69abf-a8df-46c3-addc-d32c442bbdc1: !<reference> 1a05db2a-e8a7-4667-8ba0-2cd45b13b6ed
+    2a22efc2-4e7b-4125-aa44-7b9a73264174: !<reference> 6ad0d42c-b6a0-4764-bbec-c7e5b5143229
+    f5f0e431-37cd-4cb0-bd93-fd15866e3273: !<reference> 00e9519d-8302-4015-aa9c-25b85d6e8bc9
+    8e14fa92-355e-4b05-83d4-a46b9771d890: !<reference> a8458d05-8857-40a5-b150-71b0188c2f75
+    cae99b86-e098-4d39-bc06-8ad052587c69: !<reference> abcd9adc-afb0-4554-ab64-dd517d6fa3e6
+    9da79fe9-ee2e-4a22-8fe5-484ceb5d93c0: !<reference> 0b7b8b5a-77d4-490c-ab10-fc5f6dcdd0d3
+  ImporterName: NativePackageImporter
+  PrimaryAsset: !<reference> 95136cd8-234d-4802-a603-93f045179847
+  PackageType: PackedNativePackageRoot
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
