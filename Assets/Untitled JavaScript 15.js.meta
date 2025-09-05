@@ -1,0 +1,79 @@
+- !<AssetImportMetadata/6f51c27b-2efe-48dc-8e50-927de658b18b>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 72055655-4fad-420d-9605-64f38265e229
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 72055655-4fad-420d-9605-64f38265e229
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 21771ed3-5ae3-4be2-b341-53d5efb21609
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/21771ed3-5ae3-4be2-b341-53d5efb21609>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 30191b53-278e-4ff7-a007-09db14cc3565
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    followLoader: false
+    hideAfter: false
+    itemId: false
+    itemName: false
+    itemType: false
+    minTouchSize: false
+    nameFrom: false
+    parent: false
+    pulseDuration: false
+    pulseScale: false
+    remoteRef: false
+    requireRemote: false
+    shrinkDuration: false
+    spawnAtLoader: false
+    spawnOffset: false
+    spawnScale: false
+    tappedColor: false
+    targetCamera: false
+    timeoutMs: false
+    value: false
+    wocScript: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - remoteRef: !<reference.RemoteReferenceAsset> 00000000-0000-0000-0000-000000000000
+      parent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      spawnAtLoader: true
+      spawnOffset: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      spawnScale: !<float> 1.000000
+      followLoader: false
+      requireRemote: false
+      timeoutMs: 7000
+      targetCamera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
+      minTouchSize: 0.120000
+      tappedColor: !<Vec4> {x: 0.950000, y: 0.700000, z: 0.200000, w: 1.000000}
+      pulseScale: 1.180000
+      pulseDuration: 0.180000
+      hideAfter: true
+      shrinkDuration: 0.220000
+      value: 1
+      itemId: ""
+      itemName: ""
+      itemType: ""
+      nameFrom: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      wocScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

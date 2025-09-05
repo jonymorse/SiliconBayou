@@ -1,0 +1,68 @@
+- !<ObjectPrefab/9ba2265c-47a9-4167-941e-a24f63e64210>
+  PackagePath: ""
+  objects:
+    - !<own> aec8a70f-5afd-494c-8ddf-e56b8f6bb4ad
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/4c214eea-eb66-4a18-8455-fade3e78eb7d>
+  PrefabRemaps:
+    []
+  Name: Head Binding
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 54f32991-d71f-4ec3-a2fc-b64e42c3c700
+  Components:
+    - !<own> bac32827-90c8-40b0-ac47-1e8932fd4caa
+- !<SceneObject/54f32991-d71f-4ec3-a2fc-b64e42c3c700>
+  PrefabRemaps:
+    []
+  Name: Headmorph Root
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 50.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/aec8a70f-5afd-494c-8ddf-e56b8f6bb4ad>
+  PrefabRemaps:
+    []
+  Name: Head Binding Prefab
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 40.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4c214eea-eb66-4a18-8455-fade3e78eb7d
+  Components:
+    []
+- !<Head/bac32827-90c8-40b0-ac47-1e8932fd4caa>
+  PrefabRemaps:
+    []
+  Name: Head Binding
+  Enabled: true
+  AttachmentPointType: HeadCenter
+  FaceIndex: 0
+  AttachedBarycentricVertex:
+    indices:
+      - 0
+      - 0
+      - 0
+    weights:
+      - 0.000000
+      - 0.000000
+      - 0.000000
+  TrackingScope: !<reference> 00000000-0000-0000-0000-000000000000

@@ -1,0 +1,54 @@
+- !<ObjectPrefab/feae6cc7-d844-4217-a0f5-d2f15a4555d9>
+  PackagePath: ""
+  objects:
+    - !<own> 4466e534-9808-4d99-a93b-605a28fe18c3
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/4466e534-9808-4d99-a93b-605a28fe18c3>
+  PrefabRemaps:
+    []
+  Name: Headmorph
+  Enabled: true
+  Layers: 4096
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 7aa19d97-55cb-4645-9540-34ca20cb2ea6
+- !<ScriptComponent/7aa19d97-55cb-4645-9540-34ca20cb2ea6>
+  PrefabRemaps:
+    []
+  Name: Head Morph
+  Enabled: true
+  ScriptAsset: !<reference> 4baf2e1a-5fa8-42fb-a7b0-6b0afc2a494f
+  ScriptInputsDefault:
+    model: true
+    bindingPrefab: true
+    offsets: true
+    unlitMat: true
+    remoteModel: true
+    preferRemote: true
+    loadOnStart: true
+    correctiveEulerDeg: true
+    applyCorrectionOnRoot: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      model: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      scale: 1.110000
+      bindingPrefab: !<reference.ObjectPrefab> 9ba2265c-47a9-4167-941e-a24f63e64210
+      offsets: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      unlitMat: !<reference.Material> 8bd503b7-99e0-4c20-b383-7d9b9bcb2208
+      remoteModel: !<reference.RemoteReferenceAsset> 00000000-0000-0000-0000-000000000000
+      preferRemote: true
+      loadOnStart: true
+      correctiveEulerDeg: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      applyCorrectionOnRoot: false
+  ScriptTypes:
+    "":
+      {}

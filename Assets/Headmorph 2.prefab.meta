@@ -1,0 +1,76 @@
+- !<AssetImportMetadata/e1dadcbd-7e31-4b16-88e8-4a13f1b44855>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> d63ba7e8-cef6-4558-88dd-336d7f272dcf
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> d63ba7e8-cef6-4558-88dd-336d7f272dcf
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> 176f198e-9974-4a66-a9c6-10fcef07abc9
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefab/0ab730bd-8f2b-487e-9033-529904ac98fe>
+  PackagePath: ""
+  objects:
+    - !<own> 37c0c354-9a37-4f00-b9d6-ae73bf1b95ae
+  LazyLoading: false
+  RetainAssets: true
+- !<ObjectPrefabAssetData/176f198e-9974-4a66-a9c6-10fcef07abc9>
+  SourceRemaps:
+    - 0ae804e6-6e41-4fc6-8e54-d3343d0f0b48: 37c0c354-9a37-4f00-b9d6-ae73bf1b95ae
+    - 55cc902e-c97d-4286-b4b7-3cdceda63e5b: 742e1ca7-42b9-4371-8c3c-894220074de0
+    - d63ba7e8-cef6-4558-88dd-336d7f272dcf: 0ab730bd-8f2b-487e-9033-529904ac98fe
+  SourceState: !<own> 0ab730bd-8f2b-487e-9033-529904ac98fe
+- !<SceneObject/37c0c354-9a37-4f00-b9d6-ae73bf1b95ae>
+  PrefabRemaps:
+    []
+  Name: Headmorph 2
+  Enabled: true
+  Layers: 4096
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 742e1ca7-42b9-4371-8c3c-894220074de0
+- !<ScriptComponent/742e1ca7-42b9-4371-8c3c-894220074de0>
+  PrefabRemaps:
+    []
+  Name: Head Morph
+  Enabled: true
+  ScriptAsset: !<reference> 4baf2e1a-5fa8-42fb-a7b0-6b0afc2a494f
+  ScriptInputsDefault:
+    model: true
+    bindingPrefab: true
+    offsets: true
+    unlitMat: true
+    remoteModel: true
+    preferRemote: true
+    loadOnStart: true
+    correctiveEulerDeg: true
+    applyCorrectionOnRoot: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      model: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      scale: 1.110000
+      bindingPrefab: !<reference.ObjectPrefab> 9ba2265c-47a9-4167-941e-a24f63e64210
+      offsets: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      unlitMat: !<reference.Material> 8bd503b7-99e0-4c20-b383-7d9b9bcb2208
+      remoteModel: !<reference.RemoteReferenceAsset> 00000000-0000-0000-0000-000000000000
+      preferRemote: true
+      loadOnStart: true
+      correctiveEulerDeg: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      applyCorrectionOnRoot: false
+  ScriptTypes:
+    "":
+      {}

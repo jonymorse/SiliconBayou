@@ -124,9 +124,22 @@ function setOceanEnabled(on) {
     if (fluid2DComp) { fluid2DComp.enabled = _oceanEnabled; }
 }
 
-script.api.setOceanEnabled = setOceanEnabled;
-script.api.oceanOn  = function(){ setOceanEnabled(true);  };
-script.api.oceanOff = function(){ setOceanEnabled(false); };
+// --- Property-based toggle (no .api needed) ---
+Object.defineProperties(script, {
+  oceanEnabled: {
+    set: function(on){
+      setOceanEnabled(on);
+    },
+    get: function(){
+      return _oceanEnabled; // the internal flag you already use
+    }
+  }
+});
+
+// (optional) keep these if you still want .api support:
+// script.api.setOceanEnabled = setOceanEnabled;
+// script.api.oceanOn  = function(){ setOceanEnabled(true);  };
+// script.api.oceanOff = function(){ setOceanEnabled(false); };
 
 // ---------------------------------------------------------------------------------
 

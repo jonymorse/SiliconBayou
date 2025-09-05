@@ -1,0 +1,53 @@
+- !<AssetImportMetadata/32d62d11-262d-4134-bcdc-555410000078>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> eacacd79-3abe-4eb1-a8c7-c15a002d85df
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> eacacd79-3abe-4eb1-a8c7-c15a002d85df
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> c2444ad2-4eb0-4f00-9da6-a113a0afec14
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/c2444ad2-4eb0-4f00-9da6-a113a0afec14>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: cd88cec7-8272-4231-9101-ff533fa75e9d
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    carousel: false
+    hideIfSingle: false
+    labelText: false
+    lookGroups: false
+    lookNames: false
+    rememberChoice: false
+    startIndex: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - carousel: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      lookGroups: !<reference.SceneObject[]>
+        []
+      labelText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      lookNames: !<string[]>
+        []
+      startIndex: 0
+      rememberChoice: true
+      hideIfSingle: true
+  ScriptTypes:
+    -
+      {}

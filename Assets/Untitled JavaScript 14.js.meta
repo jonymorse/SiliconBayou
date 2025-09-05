@@ -1,20 +1,20 @@
-- !<AssetImportMetadata/deee3fb0-b84a-45b8-81be-18df648ad328>
+- !<AssetImportMetadata/7dff17c6-6383-4d87-8284-2500cb10b088>
   ImportedAssetIds:
-    JavaScriptAsset: !<reference> 49cd3f6c-efb9-441a-8f15-4a3dad5ecdcc
+    JavaScriptAsset: !<reference> 0878f6e3-0f0a-4dd1-ba05-57c3e5ad325f
   ImporterName: JavaScriptAssetImporter
-  PrimaryAsset: !<reference> 49cd3f6c-efb9-441a-8f15-4a3dad5ecdcc
+  PrimaryAsset: !<reference> 0878f6e3-0f0a-4dd1-ba05-57c3e5ad325f
   PackageType: NotAPackage
   PackagePolicy: CannotBeUnpacked
   ExtraData:
-    USE_EASY_LENS: ""
+    {}
   AssetDataMap:
-    JavaScriptAsset: !<own> c734fa3f-a3dc-4085-a1c6-0f0a2172fb5f
+    JavaScriptAsset: !<own> 70d158bb-f843-409f-9955-74d5f0f4e9d0
   DependentFiles:
     []
   ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<ScriptAssetData/c734fa3f-a3dc-4085-a1c6-0f0a2172fb5f>
+- !<ScriptAssetData/70d158bb-f843-409f-9955-74d5f0f4e9d0>
   SvgIcon: ""
   SetupScript:
     code: ""
@@ -22,18 +22,20 @@
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: c244cdc5-a418-46ce-8c2d-74415d72b521
+  ComponentUid: 130a5c93-92b7-4783-91d8-8f88ed8783d5
   ExportUid: 00000000-0000-0000-0000-000000000000
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
-    frogHeadmorph: false
+    minTouchSize: false
+    targetCamera: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
-    - frogHeadmorph: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+    - targetCamera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
+      minTouchSize: 0.120000
   ScriptTypes:
     -
       {}
