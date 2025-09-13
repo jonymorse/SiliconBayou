@@ -1,0 +1,67 @@
+- !<AssetImportMetadata/943e0f4d-bfe9-48bb-b3e8-908f3b344f88>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 6e4a278a-f169-4cee-9d9e-133145c21d17
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 6e4a278a-f169-4cee-9d9e-133145c21d17
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> aca6c9f0-179c-48a7-bef8-c3dc60d2bcc1
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/aca6c9f0-179c-48a7-bef8-c3dc60d2bcc1>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: a9c3578a-8c1c-428b-b866-9a3b10dd748b
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    hideAfter: false
+    itemId: false
+    itemName: false
+    itemType: false
+    loaderScript: false
+    minTouchSize: false
+    nameFrom: false
+    pulseDuration: false
+    pulseScale: false
+    shrinkDuration: false
+    tappedColor: false
+    target: false
+    targetCamera: false
+    value: false
+    wocScript: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - target: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      loaderScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      targetCamera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
+      minTouchSize: 0.120000
+      tappedColor: !<Vec4> {x: 0.950000, y: 0.700000, z: 0.200000, w: 1.000000}
+      pulseScale: 1.180000
+      pulseDuration: 0.180000
+      hideAfter: true
+      shrinkDuration: 0.220000
+      value: 1
+      itemId: ""
+      itemName: ""
+      itemType: ""
+      nameFrom: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      wocScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

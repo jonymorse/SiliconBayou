@@ -29,12 +29,12 @@
   ScriptInputsHidden:
     hideAfter: false
     interaction: false
+    itemName: false
     pulseDuration: false
     pulseScale: false
     rmv: false
     shrinkDuration: false
     tappedColor: false
-    value: false
     wocScript: false
   ScriptTypesHidden:
     {}
@@ -48,7 +48,7 @@
       pulseDuration: 0.180000
       hideAfter: true
       shrinkDuration: 0.220000
-      value: 1
+      itemName: ""
       wocScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -

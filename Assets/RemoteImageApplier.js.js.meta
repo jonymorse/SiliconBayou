@@ -1,0 +1,48 @@
+- !<AssetImportMetadata/dbb0d9e7-6e55-4b47-98cc-690be965d590>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> baa7811a-8ab9-40c8-918e-fe95879727d2
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> baa7811a-8ab9-40c8-918e-fe95879727d2
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 0134ba69-c30c-4f00-914e-2d2e9642caaa
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/0134ba69-c30c-4f00-914e-2d2e9642caaa>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: f71191a9-0b0a-416f-a77d-1433871d1030
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    fallbackTexture: false
+    remoteImage: false
+    requireRemote: false
+    targets: false
+    timeoutMs: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - remoteImage: !<reference.RemoteReferenceAsset> 00000000-0000-0000-0000-000000000000
+      targets: !<reference.Image[]>
+        []
+      fallbackTexture: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      requireRemote: false
+      timeoutMs: 7000
+  ScriptTypes:
+    -
+      {}

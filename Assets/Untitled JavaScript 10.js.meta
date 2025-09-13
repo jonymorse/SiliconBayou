@@ -1,0 +1,41 @@
+- !<AssetImportMetadata/80c92f9c-f3b8-4c06-aa1d-fdf42a4fd90e>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> a3c027f5-bb2e-4f36-a093-ee514c76b318
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> a3c027f5-bb2e-4f36-a093-ee514c76b318
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 1190261d-781a-497b-866b-1a5c3ba5cc1a
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/1190261d-781a-497b-866b-1a5c3ba5cc1a>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: baee135f-170e-4b34-96b2-8b33c38500b1
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    minTouchSize: false
+    targetCamera: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - targetCamera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
+      minTouchSize: 0.120000
+  ScriptTypes:
+    -
+      {}

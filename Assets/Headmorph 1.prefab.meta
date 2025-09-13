@@ -49,12 +49,9 @@
   ScriptAsset: !<reference> 4baf2e1a-5fa8-42fb-a7b0-6b0afc2a494f
   ScriptInputsDefault:
     model: true
-    bindingPrefab: true
     offsets: true
-    unlitMat: true
     remoteModel: true
     preferRemote: true
-    loadOnStart: true
     correctiveEulerDeg: true
     applyCorrectionOnRoot: true
   ScriptTypesDefault:

@@ -1,50 +1,53 @@
-// CollectManager.js
-// @input Component.Text countText
-// @input Component.Text lastText   {"hint":"(optional) 'Last: Gator' display"}
-// @input Component.AudioComponent sfx
+// CollectManager.js (show/hide targets by collected keys)
+//@input Component.Text text
+//@input string[] toggleKeys
+//@input SceneObject[] toggleTargets
+//@input bool defaultHidden = true
 
-var total = 0;
-var countsByType = {};        // e.g., { frog: 2, gator: 1 }
-var seenById = {};            // optional de-dupe by item id
-var collectedLog = [];        // [{id,name,type,value,timestamp}...]
+var names = [];
+var started = false;
+var collected = {};
 
-function updateHUD(){
-  if (script.countText) script.countText.text = "Collected: " + total;
+function renderText() {
+    if (!script.text) { return; }
+    script.text.text = names.length ? ("Collected: " + names.join(", ")) : "Collected: -";
 }
 
-function setLastLabel(item){
-  if (!script.lastText || !item) return;
-  script.lastText.text = "Last: " + (item.name || "Unknown");
+function syncToggles() {
+    if (!script.toggleKeys || !script.toggleTargets) return;
+    var n = Math.min(script.toggleKeys.length, script.toggleTargets.length);
+    for (var i = 0; i < n; i++) {
+        var key = (script.toggleKeys[i] || "").trim();
+        var so  = script.toggleTargets[i];
+        if (!so) continue;
+        so.enabled = !!collected[key]; // show only if collected
+    }
 }
 
-function addItem(item){
-  var value = item.value || 1;
-  if (item.id && seenById[item.id]) {
-    // skip duplicates if the same item gets tapped twice
-    return;
-  }
-  if (item.id) seenById[item.id] = true;
-
-  total += value;
-  var t = item.type || "item";
-  countsByType[t] = (countsByType[t] || 0) + 1;
-
-  item.timestamp = getTime();
-  collectedLog.push(item);
-
-  updateHUD(); setLastLabel(item);
-  if (script.sfx) script.sfx.play(1);
+function addItem(item) {
+    var n = (item && item.name) ? (""+item.name).trim() : "Item";
+    names.push(n);
+    collected[n] = true;
+    if (started) { renderText(); syncToggles(); }
 }
 
-updateHUD();
+var onStart = script.createEvent("OnStartEvent");
+onStart.bind(function () {
+    if (script.defaultHidden && script.toggleTargets) {
+        for (var i = 0; i < script.toggleTargets.length; i++) {
+            if (script.toggleTargets[i]) script.toggleTargets[i].enabled = false;
+        }
+    }
+    started = true;
+    renderText();
+    syncToggles();
+});
 
+// Public API
 global.collectManager = {
-  add: function(v){ addItem({ value: v || 1, name: "Unknown", type: "item" }); }, // backward compat
-  addItem: addItem,
-  stats: function(){ return { total: total, counts: Object.assign({}, countsByType), log: collectedLog.slice() }; },
-  has: function(id){ return !!seenById[id]; },
-  reset: function(){
-    total = 0; countsByType = {}; seenById = {}; collectedLog = [];
-    updateHUD(); setLastLabel(null);
-  }
+    addItem: addItem,
+    addName: function (n) { addItem({ name: n }); },
+    reset: function () { names = []; collected = {}; if (started) { renderText(); syncToggles(); } },
+    list: function () { return names.slice(); },
+    has:  function (k) { return !!collected[(k||"").trim()]; }
 };

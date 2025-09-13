@@ -63,7 +63,7 @@
   MaxVisibility: Editable
   ScriptInputsHidden:
     applyCorrectionOnRoot: false
-    bindingPrefab: true
+    bindingPrefab: false
     correctiveEulerDeg: false
     loadOnStart: false
     model: false
@@ -71,7 +71,7 @@
     preferRemote: false
     remoteModel: false
     scale: false
-    unlitMat: true
+    unlitMat: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -79,12 +79,12 @@
   DefaultScriptInputs:
     - model: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
       scale: !<float> 1.000000
-      bindingPrefab: !<reference.ObjectPrefab> 9ba2265c-47a9-4167-941e-a24f63e64210
+      bindingPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
       offsets: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
-      unlitMat: !<reference.Material> 8bd503b7-99e0-4c20-b383-7d9b9bcb2208
+      unlitMat: !<reference.Material> 00000000-0000-0000-0000-000000000000
       remoteModel: !<reference.RemoteReferenceAsset> 00000000-0000-0000-0000-000000000000
       preferRemote: true
-      loadOnStart: true
+      loadOnStart: false
       correctiveEulerDeg: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
       applyCorrectionOnRoot: false
   ScriptTypes:

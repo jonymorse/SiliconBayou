@@ -27,17 +27,21 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
-    countText: false
-    lastText: false
-    sfx: false
+    defaultHidden: false
+    text: false
+    toggleKeys: false
+    toggleTargets: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
-    - countText: !<reference.Text> 00000000-0000-0000-0000-000000000000
-      lastText: !<reference.Text> 00000000-0000-0000-0000-000000000000
-      sfx: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+    - text: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      toggleKeys: !<string[]>
+        []
+      toggleTargets: !<reference.SceneObject[]>
+        []
+      defaultHidden: true
   ScriptTypes:
     -
       {}

@@ -1,0 +1,138 @@
+- !<NativePackageDescriptor/47320922-736e-4a1d-bc23-92ea6560840f>
+  PackagePath: ""
+  StudioVersion:
+    major: 5
+    minor: 12
+    patch: 1
+    build: 25080420
+    type: Unset
+    buildFlavor: ""
+    timestamp: 0
+    commit: ""
+  Description: |
+    Image Carousel
+    
+    Provides a carousel UI for the selection of one image between many. Requires a ScreenTransform.
+    For a vertical orientation (or any other orientation) change the z rotation of your screen transform.
+    
+    === EVENTS ===
+    
+    * onSelectionUpdate(i,tex)
+         'i' is the index of the item in the carousel
+         'tex' is the texture of the icon that was selected
+    
+    Registering for the event from another script:
+    
+         script.carouselCC.onSelectionUpdate.add(function(i,tex) {...});
+    
+    API
+    ===
+    
+    * size(): int
+          Returns the number of items in the carousel
+    
+    * setSelected(int index, bool animate): void
+          Select item at index, animate to position if animate === true
+    
+    * getSelected(): int
+          Returns the currently selected item index, or -1 if the carousel is empty
+    
+    * getCentered(): int
+          Returns the item index closest to center (also while dragging/animating)
+    
+    * add(Texture image): int
+          Add an item to the end of the carousel with image
+          Returns the new image index
+    
+    * remove(int index): bool
+          Remove image at index, returns false if index is out of bounds
+    
+    * setImage(int index, Texture image): bool
+          Set image at index, returns false if index is out of bounds
+    
+    * getImage(int index): Texture
+          Returns the image texture for index, or null if index is out of bounds
+    
+    * getSelectedImage(): Texture
+          Returns the currently selected image texture, or null is the carousel is empty
+    
+    * setLocked(int index, bool locked): void
+          Show/Hide locked badge on the icon
+    
+    * getLocked(int index): bool
+          Get locked state for icon index
+    
+    * setData(int index, Object data) : void
+          Set private data associated with this icon
+    
+    * getData(int index): Object
+          Get private data associated with this icon
+    
+    * enableInteraction(): void
+          Enable UI
+    
+    * disableInteraction(): void
+          Disable UI
+    
+    * show(): void
+          Show carousel (fade-in)
+    
+    * hide(): void
+          Hide carousel (fade-out)
+    
+    * isVisible(): bool
+          Returns visibility
+
+  SvgIcon: |-
+    <?xml version="1.0" encoding="UTF-8"?>
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1125 1125">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: #a4dae6;
+          }
+    
+          .cls-2 {
+            fill: #d0daaa;
+          }
+    
+          .cls-3 {
+            fill: #d0abe6;
+          }
+    
+          .cls-4 {
+            fill: none;
+            stroke: #fff;
+            stroke-linecap: round;
+            stroke-miterlimit: 10;
+            stroke-width: 16.29px;
+          }
+        </style>
+      </defs>
+      <path class="cls-4" d="M719.52,719c-86.67,86.67-227.18,86.67-313.85,0"/>
+      <path class="cls-4" d="M405.68,405.16c86.67-86.67,227.18-86.67,313.85,0"/>
+      <circle class="cls-2" cx="563.62" cy="561.06" r="197.49"/>
+      <circle class="cls-3" cx="146.91" cy="571.57" r="135.75"/>
+      <circle class="cls-1" cx="978.25" cy="562.05" r="135.75"/>
+    </svg>
+  SetupScript:
+    code: ""
+  VersionMajor: 17
+  VersionMinor: 0
+  VersionPatch: 0
+  UpdateCheckpoint: 68
+  ExportUid: fc2c97c5-72a2-4fa0-9f77-64d7f456fa0c
+  ComponentUid: 0005ef4d-bdc1-50aa-0000-00000000aa40
+  CurrentVisibility: Locked
+  MaxVisibility: Editable
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  Instantiable: !<reference> 0392aed4-9e6e-4695-bf2c-128e3576c42b
+  AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
+    Name: Image Carousel
+    AssetId: RWLm7e7YVGmKxsNCriGOy
+    Hash: cb9ca14f604c9610e21a16b3de8e9736
+    Version:
+      major: 17
+      minor: 0
+      patch: 0
+      build: 0

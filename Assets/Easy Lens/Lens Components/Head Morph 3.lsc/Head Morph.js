@@ -1,11 +1,11 @@
 // Headmorph.js (remote support, stack-overflow fix)
 // Minimal changes to your original file:
-//  - Adds optional RemoteReferenceAsset support (ObjectPrefab or RenderMesh)
-//  - Defers init to OnStart to avoid "Component is not yet awake"
-//  - Replaces invalid .uniformScale(...) with explicit scale
-//  - Uses identity quaternion correctly
-//  - Robust material swap (handles nested RMV/SMV)
-//  - NO custom getter for remoteModel (prevents recursive getter stack overflow)
+// - Adds optional RemoteReferenceAsset support (ObjectPrefab or RenderMesh)
+// - Defers init to OnStart to avoid "Component is not yet awake"
+// - Replaces invalid .uniformScale(...) with explicit scale
+// - Uses identity quaternion correctly
+// - Robust material swap (handles nested RMV/SMV)
+// - NO custom getter for remoteModel (prevents recursive getter stack overflow)
 
 //@input Asset.ObjectPrefab model
 //@input float scale = 1 {"widget":"slider","default":1.0,"min":0.1, "max":2.0, "step":0.01}
@@ -16,7 +16,7 @@
 // NEW: remote-prefab support
 //@input Asset.RemoteReferenceAsset remoteModel {"hint":"Remote Object Prefab or RenderMesh"}
 //@input bool preferRemote = true
-//@input bool loadOnStart = true
+//@input bool loadOnStart = false
 
 // --- Optional corrective rotation for mismatched asset axes ---
 //@input vec3 correctiveEulerDeg = {0,0,0} {"label":"Corrective Rot (deg)"}
@@ -25,10 +25,8 @@
 const headmorphRootName = "Headmorph Root";
 const baseOffset = new vec3(0,0,0);
 const baseScale = 1.1;
-let inputVals = {
-    model: script.model,
-    scale: script.scale
-};
+
+let inputVals = { model: script.model, scale: script.scale };
 let instance = null;
 let bindingSo = null;
 let modelRoot = null;
@@ -46,33 +44,44 @@ function init() {
         bt.setLocalPosition(new vec3(0,0,0));
         bt.setLocalRotation( new quat(90,0,0,1) ); // OG fix
         bt.setLocalScale(new vec3(1,1,1));
+        // Call once right after init() finishes:
+        debugLayer("after init");
+        
+        
+
+
     }
 
     fixRenderLayers(so);
 
     // Ensure the models root lives UNDER the Head Binding so it tracks the head
-modelRoot = bindingSo ? findChild(bindingSo, headmorphRootName) : null;
-if (!modelRoot) {
-    modelRoot = (bindingSo || so).createChild(headmorphRootName);
-}
+    modelRoot = bindingSo ? findChild(bindingSo, headmorphRootName) : null;
+    if (!modelRoot) {
+        modelRoot = (bindingSo || so).createChild(headmorphRootName);
+    }
 
     const offs = script.offsets ? script.offsets : baseOffset;
     const rt = modelRoot.getTransform();
     rt.setLocalPosition(offs);
     // Preserve existing rotation on Headmorph Root (do not force identity)
-// rt.setLocalRotation(new quat(0,0,0,1));
-    applyScale(inputVals.scale);
+    // rt.setLocalRotation(new quat(0,0,0,1));
 
+    applyScale(inputVals.scale);
     setupProperties();
 
     // Choose source
-    if (script.loadOnStart && script.preferRemote && script.remoteModel) {
+// Choose source (spawn only when loadOnStart is true)
+if (script.loadOnStart) {
+    if (script.preferRemote && script.remoteModel) {
         downloadAndInstantiate(script.remoteModel, function(success){
-            if (!success) instantiateModel(inputVals.model);
+            if (!success && inputVals.model) instantiateModel(inputVals.model);
         });
-    } else {
+    } else if (inputVals.model) {
         instantiateModel(inputVals.model);
     }
+}
+// else: do nothing on start; wait for onCarouselSelection
+
 }
 
 function applyScale(val){
@@ -81,7 +90,10 @@ function applyScale(val){
 }
 
 function destroyInstance(){
-    if (instance) { instance.destroy(); instance = null; }
+    if (instance) {
+        instance.destroy();
+        instance = null;
+    }
 }
 
 function instantiateModel(model) {
@@ -115,11 +127,15 @@ function instantiateFromAsset(asset){
 function postInstantiate(root){
     zeroLocal(root);
     // Optional corrective rotation: apply to instance or to the Headmorph Root
-    if (script.applyCorrectionOnRoot) { applyCorrectiveRotation(modelRoot); }
-    else { applyCorrectiveRotation(root); }
-
+    if (script.applyCorrectionOnRoot) {
+        applyCorrectiveRotation(modelRoot);
+    } else {
+        applyCorrectiveRotation(root);
+    }
     if (script.unlitMat) swapMaterialsDeep(root);
     fixRenderLayers(root);
+    // Also call at the end of postInstantiate(...):
+        debugLayer("after postInstantiate");
 }
 
 function downloadAndInstantiate(remoteRef, cb){
@@ -134,7 +150,6 @@ function downloadAndInstantiate(remoteRef, cb){
         if (myId === _requestId) { cb && cb(false); }
     });
 }
-
 
 function swapMaterialsDeep(root){
     const stack = [root];
@@ -158,12 +173,13 @@ function swapMaterialOn(vis){
         vis.addMaterial(unlit);
     } catch (e) { /* ignore nonstandard materials */ }
 }
+
 function setupProperties() {
     script.createEvent("OnDisableEvent").bind(function(){ if (bindingSo) bindingSo.enabled = false; });
     script.createEvent("OnEnableEvent").bind(function(){ if (bindingSo) bindingSo.enabled = true; });
 
-    var _remoteModelRef = script.remoteModel;   // backing vars (no recursion)
-    var _preferRemote   = !!script.preferRemote;
+    var _remoteModelRef = script.remoteModel; // backing vars (no recursion)
+    var _preferRemote = !!script.preferRemote;
 
     Object.defineProperties(script, {
         model: {
@@ -176,7 +192,10 @@ function setupProperties() {
             get: function(){ return inputVals.model; }
         },
         scale: {
-            set: function(v){ inputVals.scale = v; applyScale(inputVals.scale); },
+            set: function(v){
+                inputVals.scale = v;
+                applyScale(inputVals.scale);
+            },
             get: function(){ return inputVals.scale; }
         },
         remoteModel: {
@@ -194,7 +213,6 @@ function setupProperties() {
                 var next = !!v;
                 var prev = _preferRemote;
                 _preferRemote = next;
-
                 if (!next) {
                     // switching to LOCAL: instantiate immediately
                     if (inputVals.model) { instantiateModel(inputVals.model); }
@@ -206,8 +224,6 @@ function setupProperties() {
         }
     });
 }
-
-
 
 function findChild(root, name) {
     if (root.name == name) return root;
@@ -269,3 +285,39 @@ function applyCorrectiveRotation(so){
     // Pre-multiply so correction happens in parent space
     t.setLocalRotation(q.multiply(t.getLocalRotation()));
 }
+
+// near the bottom (anywhere after destroyInstance is defined)
+script.clear = function () {
+    destroyInstance();   // removes current instance immediately
+    
+    print("Clear")
+    // optional: also cancel any in-flight remote load:
+    _requestId++;     // bump so any pending download gets ignored
+};
+
+
+function debugLayer(tag){
+  var so = script.getSceneObject();
+  // find nearest parent camera
+  var p = so, cam = null;
+  while (p && !cam){ cam = p.getComponent && p.getComponent("Component.Camera"); p = p.getParent && p.getParent(); }
+  print("[HEADMORPH] " + tag + " so.layer=" + so.layer + " cam.layer=" + (cam ? cam.renderLayer : "null"));
+}
+
+
+// -- TEMP DEBUG: tap to inspect state ----------------------------------------
+function debugLayer(tag){
+    var so = script.getSceneObject();
+    // find nearest parent camera
+    var p = so, cam = null;
+    while (p && !cam) { cam = p.getComponent && p.getComponent("Component.Camera"); p = p.getParent && p.getParent(); }
+    print("[HEADMORPH] " + tag + " so.enabled=" + so.enabled +
+          " so.layer=" + so.layer + " cam.layer=" + (cam ? cam.renderLayer : "null") +
+          " camSO=" + (cam ? cam.getSceneObject().name : "null"));
+}
+
+var tapEvt = script.createEvent("TapEvent");
+tapEvt.bind(function(){
+    debugLayer("tap");
+});
+

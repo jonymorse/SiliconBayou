@@ -1,0 +1,55 @@
+- !<AssetImportMetadata/94f87567-c6f9-4169-a34a-eb3306887fe0>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> b6f32327-3cf4-4540-9ec6-a1dade5f5725
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> b6f32327-3cf4-4540-9ec6-a1dade5f5725
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> 9260063f-baee-4741-9b64-1c5e03badc1d
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/9260063f-baee-4741-9b64-1c5e03badc1d>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 2151ed45-4c85-4c82-8d8b-1feebdab2d5e
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    autoSelectFirstUnlocked: false
+    bridge: false
+    lockOverlays: false
+    pollInterval: false
+    requiredNames: false
+    showToast: false
+    toastSeconds: false
+    toastText: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - bridge: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      requiredNames: !<string[]>
+        []
+      pollInterval: 0.250000
+      autoSelectFirstUnlocked: false
+      lockOverlays: !<reference.SceneObject[]>
+        []
+      showToast: false
+      toastText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      toastSeconds: 1.200000
+  ScriptTypes:
+    -
+      {}

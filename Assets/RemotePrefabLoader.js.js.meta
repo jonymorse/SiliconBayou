@@ -1,0 +1,53 @@
+- !<AssetImportMetadata/43f280c4-b7e1-4510-acbe-b0618a9f17e6>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 7485a5cc-3e3a-49fe-b3ee-88ecd1e9fa5c
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 7485a5cc-3e3a-49fe-b3ee-88ecd1e9fa5c
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    JavaScriptAsset: !<own> a8e93050-8e85-478b-96ac-10f7120ae894
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/a8e93050-8e85-478b-96ac-10f7120ae894>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 6d9969d2-e9ba-4fdd-87ba-2e8b0ce1530f
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    followLoader: false
+    parent: false
+    remoteRef: false
+    requireRemote: false
+    spawnAtLoader: false
+    spawnOffset: false
+    spawnScale: false
+    timeoutMs: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - remoteRef: !<reference.RemoteReferenceAsset> 00000000-0000-0000-0000-000000000000
+      parent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      spawnAtLoader: true
+      spawnOffset: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      spawnScale: !<float> 1.000000
+      followLoader: false
+      requireRemote: false
+      timeoutMs: 7000
+  ScriptTypes:
+    -
+      {}
