@@ -32,7 +32,7 @@
     emptyKeyIsUnlocked: false
     gateByCollection: false
     headmorph: false
-    localModels: false
+    lockImage: false
     lookKeys: false
     pollInterval: false
     remoteModels: false
@@ -44,8 +44,6 @@
     - headmorph: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       remoteModels: !<reference.RemoteReferenceAsset[]>
         []
-      localModels: !<reference.ObjectPrefab[]>
-        []
       lookKeys: !<string[]>
         []
       defaultIndex: 0
@@ -53,6 +51,7 @@
       emptyKeyIsUnlocked: false
       pollInterval: 0.300000
       clearByDisable: true
+      lockImage: !<reference.Image> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
