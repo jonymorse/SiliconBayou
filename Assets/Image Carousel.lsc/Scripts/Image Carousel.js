@@ -546,6 +546,8 @@ function adjustUI() {
 
 function tapOnItemFunction(i) {
     return function (args) {
+        print("[ImageCarousel] Tap on item (local ring index): " + i);
+
         setCenteredItem(i);
     };
 }

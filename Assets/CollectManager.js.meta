@@ -27,7 +27,10 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    caseInsensitiveKeys: false
     defaultHidden: false
+    pushOnChange: false
+    remoteServiceModule: false
     text: false
     toggleKeys: false
     toggleTargets: false
@@ -42,6 +45,9 @@
       toggleTargets: !<reference.SceneObject[]>
         []
       defaultHidden: true
+      remoteServiceModule: !<reference.RemoteServiceModule> 00000000-0000-0000-0000-000000000000
+      pushOnChange: false
+      caseInsensitiveKeys: true
   ScriptTypes:
     -
       {}

@@ -2,8 +2,8 @@
   PackagePath: ""
   objects:
     - !<own> 00000000-0000-0065-0000-000000000064
-    - !<own> 0005641c-028d-459a-0000-000000014b4d
     - !<own> a1f46b52-9204-42d6-af9c-adef37f24541
+    - !<own> 0005641c-028d-459a-0000-000000014b4d
     - !<own> 0228d96f-5df4-4f62-8d1b-ad8f142813ea
     - !<own> 021c28a8-9947-49d7-8311-c9169c6501de
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
@@ -416,7 +416,7 @@
 - !<ScriptComponent/26c0438e-c64c-4c8b-994e-ed01ce4aba3c>
   PrefabRemaps:
     []
-  Name: RemoteImageApplier.js
+  Name: RemoteImageApplier
   Enabled: true
   ScriptAsset: !<reference> baa7811a-8ab9-40c8-918e-fe95879727d2
   ScriptInputsDefault:
@@ -822,7 +822,6 @@
   Enabled: true
   ScriptAsset: !<reference> b840e81f-91e8-456e-85b4-8f631ffa30de
   ScriptInputsDefault:
-    localModels: true
     defaultIndex: true
     gateByCollection: true
     emptyKeyIsUnlocked: true
@@ -836,8 +835,6 @@
         - !<reference> 940c235b-2adb-44a1-b43b-6f94950d5c88
         - !<reference> 5a9d4d36-d42e-41aa-8611-2d504fb96a46
         - !<reference> 3e859894-53d7-4b1b-bb29-dcbf9b8ce0b9
-      localModels: !<reference.ObjectPrefab[]>
-        []
       lookKeys: !<string[]>
         - Pelican
         - Gator
@@ -847,6 +844,7 @@
       emptyKeyIsUnlocked: false
       pollInterval: 0.300000
       clearByDisable: false
+      lockImage: !<reference.Image> d2f7a32b-5995-45e8-8c5e-eb4ecf7f784c
   ScriptTypes:
     "":
       {}
@@ -1233,6 +1231,7 @@
     - !<own> 2d1464cc-08fd-4877-9380-894b30ca9e36
     - !<own> c49d95d3-e8a6-4457-a554-2d4806b0005e
     - !<own> 520156eb-f06f-4fa8-90c8-3558ea9be06a
+    - !<own> d2f7a32b-5995-45e8-8c5e-eb4ecf7f784c
 - !<SceneObject/8347efb7-afc2-4954-8650-af195d8d112b>
   PrefabRemaps:
     []
@@ -1335,7 +1334,6 @@
   ScriptInputsDefault:
     pulseScale: true
     pulseDuration: true
-    hideAfter: true
     shrinkDuration: true
     wocScript: true
   ScriptTypesDefault:
@@ -1344,10 +1342,10 @@
     "":
       interaction: !<reference.InteractionComponent> df540291-b6bb-4a64-b12c-5eadb210a074
       rmv: !<reference.RenderMeshVisual> a8358677-a7e9-466c-a237-52928c8d46ab
-      tappedColor: !<Vec4> {x: 10.000000, y: 10.000000, z: 10.000000, w: 1.000000}
+      tappedColor: !<Vec4> {x: 0.950000, y: 0.700000, z: 0.200000, w: 1.000000}
       pulseScale: 1.180000
       pulseDuration: 0.180000
-      hideAfter: true
+      hideAfter: false
       shrinkDuration: 0.220000
       itemName: Gator
       wocScript: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
@@ -1643,7 +1641,7 @@
 - !<ScriptComponent/aa7a7c96-e0e0-4ff2-be81-970f135cda4c>
   PrefabRemaps:
     []
-  Name: RemoteImageApplier.js
+  Name: RemoteImageApplier
   Enabled: true
   ScriptAsset: !<reference> baa7811a-8ab9-40c8-918e-fe95879727d2
   ScriptInputsDefault:
@@ -1778,7 +1776,7 @@
   Far: 200.000000
   Fov: 63.541019
   ClearColor: !<CameraClearColor>
-    Mode: None
+    Mode: Background
     Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
     InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
   ClearDepth: !<CameraClearDepth>
@@ -1805,6 +1803,8 @@
   ScriptInputsDefault:
     text: true
     defaultHidden: true
+    pushOnChange: true
+    caseInsensitiveKeys: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -1819,6 +1819,9 @@
         - !<reference> 3cbd8930-e63c-4279-98d8-9ee3da7a21af
         - !<reference> d681c8bf-177d-4efc-8ae8-b1fc9dbecefa
       defaultHidden: true
+      remoteServiceModule: !<reference.RemoteServiceModule> b7bee88f-9e53-4de2-b45d-cd2b7c96d5d4
+      pushOnChange: false
+      caseInsensitiveKeys: true
   ScriptTypes:
     "":
       {}
@@ -2165,6 +2168,25 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<Image/d2f7a32b-5995-45e8-8c5e-eb4ecf7f784c>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Top
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 5cd735a7-9d44-41f4-a8b1-8ae55e3fab2e
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/d4a5c282-e65d-4c82-bc0b-bf09345649b0>
   PrefabRemaps:
     []
@@ -2215,7 +2237,7 @@
 - !<ScriptComponent/d977e55c-2639-4e81-b709-66c122db1cb7>
   PrefabRemaps:
     []
-  Name: RemoteImageApplier.js
+  Name: RemoteImageApplier
   Enabled: true
   ScriptAsset: !<reference> baa7811a-8ab9-40c8-918e-fe95879727d2
   ScriptInputsDefault:

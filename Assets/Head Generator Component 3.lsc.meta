@@ -1,0 +1,29 @@
+- !<AssetImportMetadata/2dda030f-b42d-405c-9377-1aa566cf63f4>
+  ImportedAssetIds:
+    .hidden/CameraToUV: !<reference> dbf03899-c9ee-494a-87dc-8d262b36a52c
+    .hidden/Reprojection: !<reference> acf54ee9-5b07-4de6-a01a-22c3cf9de8ea
+    CameraToUV: !<reference> 9a86a0d5-fcea-4b1c-bb6b-bebca5463996
+    CameraToUV|CameraToUV|GraphPassInfo: !<reference> b5bd55bc-5498-49ff-8ea9-7bcdffdebbdf
+    Face Mesh: !<reference> 1137c1fa-1855-47e4-85ec-19ec579b80e3
+    Meshes/SkullAndFaceMesh: !<reference> 5b52d581-a46d-4cd6-98e3-851cd1117e65
+    Meshes/model: !<reference> 5d6a15d8-fd3f-4456-b9bc-8a9a702087e4
+    Reprojection: !<reference> ccecb74c-e334-4717-94fb-49725ae667b6
+    Reprojection Face Mesh IN: !<reference> 3efc569d-434d-4e6f-bb7f-d5124f99638e
+    Reprojection|Reprojection|GraphPassInfo: !<reference> c11ad629-fc2a-407c-8b16-52569d89defa
+    Textures/texture_kd: !<reference> cb49dfe2-fc19-4b25-b93c-d7d6eccd3a24
+    alpha_map: !<reference> e0ee87f4-1a27-461c-aef6-9092c2163130
+    headmorph_component_plugin: !<reference> 96a429d4-e308-4135-ae09-99e579bbb3cb
+    reproj: !<reference> e0672a19-79fe-4381-978d-866884fb3e90
+  ImporterName: LensCoreImporter
+  PrimaryAsset: !<reference> 96a429d4-e308-4135-ae09-99e579bbb3cb
+  PackageType: LegacyPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<LensCoreImporterSettings>
+    PersistentIdGenerationAlgorithm: DescriptorBased
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
